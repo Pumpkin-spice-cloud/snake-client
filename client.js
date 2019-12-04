@@ -37,8 +37,5 @@ const connect = function () {
 
 
 
-const connecting = {
-  connect
-}
 
-module.exports = connecting;
+module.exports = {connect};
