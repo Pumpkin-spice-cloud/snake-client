@@ -14,6 +14,14 @@ const connect = function() {
   conn.on('data', data => {
     console.log(data);
   })
+
+  conn.on('connect', () => {
+    console.log('Server says hello');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: AMO');
+  });
   
   return conn;
 }
@@ -21,7 +29,6 @@ const connect = function() {
 
 
 const connecting = {
-  net,
   connect
 }
 
