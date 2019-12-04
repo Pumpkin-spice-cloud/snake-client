@@ -24,11 +24,7 @@ const connect = function () {
   });
 
 
-  // conn.on('connect', () => {
-  //   conn.write('Move: up')
-    
-  // });
-
+  
 
   return conn;
 
@@ -38,4 +34,5 @@ const connect = function () {
 
 
 
-module.exports = {connect};
+module.exports = {connect}
+
